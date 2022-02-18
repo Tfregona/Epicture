@@ -11,7 +11,7 @@ import ProfilScreen from "../screens/Profile";
 import HomeScreen from "../screens/HomeScreen";
 import SearchScreen from "../screens/SearchScreen";
 import AddMediaScreen from "../screens/AddMedia";
-import FavoriteScreen from "../screens/FavoritesScreen"
+import FavoriteScreen from "../screens/FavoritesScreen";
 const FullScreenWidth = Dimensions.get("window").width;
 
 const BottomTab = createBottomTabNavigator();
@@ -33,7 +33,7 @@ export default function BottomTabNavigator() {
           } else if (route.name === "Profile") {
             iconName = focused ? "person" : "person-outline";
           } else if (route.name === "Favorites") {
-            iconName = focused ? "heart-sharp" :"heart-outline"
+            iconName = focused ? "heart-sharp" : "heart-outline";
           }
 
           return (
@@ -45,11 +45,11 @@ export default function BottomTabNavigator() {
             />
           );
         },
-          headerShown: false,
-          activeTintColor: "lightseagreen",
-          inactiveTintColor: "grey",
-          labelStyle: { fontSize: 16 },
-          style: { width: FullScreenWidth },
+        headerShown: false,
+        activeTintColor: "lightseagreen",
+        inactiveTintColor: "grey",
+        labelStyle: { fontSize: 16 },
+        style: { width: FullScreenWidth },
       })}
     >
       <BottomTab.Screen name="Home" component={HomeScreen} />

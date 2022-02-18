@@ -43,9 +43,24 @@ const HomeScreen = () => {
   return (
     <>
       <View style={styles.fixToText}>
-        <Button style={styles.btnFilter} title="day" onPress={() => refetch("day")} color="#63AD90"/>
-        <Button style={styles.btnFilter} title="week" onPress={() => refetch("week")} color="#63AD90"/>
-        <Button style={styles.btnFilter} title="year" onPress={() => refetch("year")} color="#63AD90"/>
+        <Button
+          style={styles.btnFilter}
+          title="day"
+          onPress={() => refetch("day")}
+          color="#63AD90"
+        />
+        <Button
+          style={styles.btnFilter}
+          title="week"
+          onPress={() => refetch("week")}
+          color="#63AD90"
+        />
+        <Button
+          style={styles.btnFilter}
+          title="year"
+          onPress={() => refetch("year")}
+          color="#63AD90"
+        />
       </View>
       <SafeAreaView
         style={tailwind`flex flex-col bg-gray-200 rounded shadow-lg`}
@@ -73,6 +88,6 @@ const styles = StyleSheet.create({
   },
   btnFilter: {
     borderRadius: 15,
-  }
+  },
 });
 export default HomeScreen;

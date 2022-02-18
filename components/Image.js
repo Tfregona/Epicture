@@ -64,9 +64,7 @@ const ImagePost = ({ item }) => {
         />
       );
     } else {
-        return (
-            <Text>No image found 😟</Text>
-        )
+      return <Text>No image found 😟</Text>;
     }
   }
 };

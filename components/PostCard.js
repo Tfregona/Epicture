@@ -4,7 +4,7 @@ import ImagePost from "../components/Image";
 import { useNavigation } from "@react-navigation/native";
 import { Dimensions } from "react-native";
 import tw from "tailwind-react-native-classnames";
-import Like from '../components/Like';
+import Like from "../components/Like";
 
 const PostCard = ({ item }) => {
   const navigation = useNavigation();
@@ -32,7 +32,7 @@ const PostCard = ({ item }) => {
           </Text>
         </View>
         <View style={tw`items-end`}>
-          <Like item={item}/>
+          <Like item={item} />
         </View>
       </View>
     </Pressable>

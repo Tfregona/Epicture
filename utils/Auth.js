@@ -32,8 +32,6 @@ export function useAuthToken() {
 
 const AuthContext = createContext({});
 
-
-
 export const AuthProvider = ({ children }) => {
   const [state, setState] = useState({
     isLoading: true,
@@ -91,9 +89,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={authContext}>
-      {children}
-    </AuthContext.Provider>
+    <AuthContext.Provider value={authContext}>{children}</AuthContext.Provider>
   );
 };
 

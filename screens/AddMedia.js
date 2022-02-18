@@ -24,17 +24,13 @@ const AddMedia = () => {
   return (
     <View style={{ alignItems: "center", justifyContent: "center" }}>
       <TouchableOpacity onPress={openCamera}>
-        <Text
-          style={tailwind`self-start ml-3 font-bold text-2xl mb-2`}
-        >
+        <Text style={tailwind`self-start ml-3 font-bold text-2xl mb-2`}>
           Camera
         </Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={openGallery}>
-        <Text
-          style={tailwind`self-start ml-3 font-bold text-2xl mb-2`}
-        >
+        <Text style={tailwind`self-start ml-3 font-bold text-2xl mb-2`}>
           Gallery
         </Text>
       </TouchableOpacity>

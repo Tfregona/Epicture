@@ -18,7 +18,9 @@ const FavoritesScreen = () => {
 
   const onRefresh = React.useCallback(() => {
     setRefreshing(true);
-    setTimeout(() => {setRefreshing(false)}, 3000);
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 3000);
   }, []);
 
   useEffect(() => {

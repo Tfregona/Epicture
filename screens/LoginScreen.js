@@ -1,11 +1,9 @@
 import * as Linking from "expo-linking";
-import { CLIENT_ID, useAuth, CALLBACK_URL, CLIENT_SECRET } from "../utils/Auth";
+import { CLIENT_ID, useAuth, CALLBACK_URL } from "../utils/Auth";
 import * as React from "react";
 import * as WebBrowser from "expo-web-browser";
-import { Button, ImageBackground, Platform, Text } from "react-native";
+import { ImageBackground, Text } from "react-native";
 import tailwind from "tailwind-react-native-classnames";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { ResizeMode } from "expo-av";
 import { Dimensions } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
